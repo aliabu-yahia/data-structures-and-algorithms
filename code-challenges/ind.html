@@ -57,13 +57,21 @@
 courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks'},
   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
   finalExam: true}
-  const getCourseKeys = (obj) => {
+//   const getCourseKeys = (obj) => {
+//   // Solution code here...
+//   let x=Object.key(obj)
+  
+//   return x
+// };
+const createList = (availableItems) => {
   // Solution code here...
-  let x=Object.key(obj)
-  console.log(x);
-  return x
+  let localArrrry=[];
+  availableItems.forEach(element => {
+    localArrrry.push(element.name)
+  });
+  return localArrrry
 };
-console.log(getCourseKeys(courseInfo));
+console.log([{ name: 'apples', available: true }, { name: 'pears', available: true }, { name: 'oranges', available: false }, { name: 'bananas', available: true }, { name: 'blueberries', available: false }]);
 
 </script>
 </html>
